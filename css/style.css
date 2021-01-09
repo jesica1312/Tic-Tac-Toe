@@ -85,17 +85,6 @@ td{
     border-radius: 30px;
 }
 
-.main .container{
-  background-color:rgb(78, 79, 80);
-
-}
-
-.home .container{
-  
-  background-color: transparent;
-
-
-}
 
 .scoreboard{
   display: flex;
@@ -125,13 +114,13 @@ td{
     font-size: 40px;
     text-align: center;
     font-weight: 800;
-    color: rgb(35, 10, 63);
+    color: rgb(225, 220, 231);
     margin-bottom: 50px;
     height: 25px;
 }
 
 .status span{
-  color: rgb(35, 10, 63);
+  color: rgb(225, 220, 231);
 }
 
 .game-grid{
