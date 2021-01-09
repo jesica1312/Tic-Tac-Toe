@@ -7,8 +7,27 @@
     <title>Tic Tac Toe</title>
 </head>
 <body>
-<div>
+<div class="flex">
     <h1> Tic Tac Toe</h1>
+    <div class="grid">
+        <div class="scoreboard">
+            <table>
+                <tr> 
+                  <td> Player 1(X) </td>
+                  <td> &nbsp; </td>
+                  <td> Player 2(O) </td>
+                </tr>
+                <tr>
+                  <td class="score" id="player1">
+                    0 
+                  </td>
+                  <td> &nbsp; </td>
+                  <td class="score" id="player2">
+                    0 
+                  </td>
+                </tr>
+              </table>
+        </div>
     <div class="container">
         <div class="status">x is next</div>
         <div class="game-grid">
@@ -29,6 +48,7 @@
         </div>
 
     </div>
+</div>
     
     <div class="btn reset">Reset</div>
    

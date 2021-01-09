@@ -15,15 +15,35 @@ body{
 }
 
 h1{
-    line-height: 1.2;
-    margin: 20px 20px;
+    line-height: 25px;
+    margin-top: 20px;
+    margin-bottom: 30px;
     text-align: center;
     font-weight: bolder;
+    
 
 }
 
+.flex{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+}
+
+.grid{
+  display: grid;
+  grid-template-rows: 10% 90%;
+  gap: 0px;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
 .btn{
-    display: inline-block;
+    display: inline-flex;
     padding: 10px 30px;
     cursor: pointer;
     background: black;
@@ -33,6 +53,7 @@ h1{
     transition: .3s;
     align-content: center;
     margin-left: 20px;
+    margin-top: 5px;
 
 }
 
@@ -41,19 +62,47 @@ h1{
 }
 
 .container{
-    padding: 25px 40px;
-    margin: 20px;
+    padding: 10px 25px;
+    margin: 5px;
     background-color:rgb(78, 79, 80);
    
     border-radius: 30px;
 }
 
+.scoreboard{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  
+  font-weight: 800;
+  padding: 5px;
+  
+
+
+}
+
+.score{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  color: rgb(23, 23, 32);
+
+
+}
+
+
+
 .status{
-    font-size: 25px;
+    font-size: 40px;
     text-align: center;
     font-weight: 800;
     color: whitesmoke;
-    margin-bottom: 15px;
+    margin-bottom: 50px;
+    height: 25px;
+}
+
+.status span{
+  color: hsl(46, 54%, 89%);
 }
 
 .game-grid{
@@ -66,12 +115,19 @@ h1{
 }
 
 .game-cell{
-    height: 80px;
-    width: 80px;
+    height: 100px;
+    width: 100px;
+    display: flex;
     cursor: pointer;
-    background:rgb(78, 79, 80);
+    background-color:rgb(78, 79, 80);
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+
+    
     
 }
+
 
 .x,
 .o {
@@ -80,13 +136,15 @@ h1{
 
 .x::after {
   content: '×';
-  font-size: 80px;
+  font-size: 100px;
+
 }
 
 .o::after {
   content: '○';
-  color: #F2EBD3;
-  font-size: 80px;
+  font-size: 120px;
+  color: hsl(46, 54%, 89%);
+
 }
 
 .won::after {
@@ -96,7 +154,6 @@ h1{
 @media only screen and (max-width: 1024px) {
   .game-grid {
     margin-top: 25px;
-    margin-bottom: ;
     grid-gap: 10px;
   }
 
@@ -110,7 +167,7 @@ h1{
   }
 
   .o::after {
-    font-size: 150px;
+    font-size: 175px;
   }
 }
 
